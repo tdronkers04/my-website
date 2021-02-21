@@ -1,0 +1,274 @@
+* {
+    font-family: "Rajdhani";
+    margin: 0%;
+  }
+  
+  /* NAVIGATION */
+
+  nav a:link {
+    color: #fec524;
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  nav a:visited {
+    color: #fec524;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    font-size: 18px;
+    background-color:#0E2240;
+    top: 0;
+  }
+
+  .logo-wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 25%;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fec524;
+  }
+  
+  @media screen and (max-width:1024px){
+    .nav-links {
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    nav {
+      overflow-x: hidden;
+    }
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 90vh;
+      top: 90px;
+      background-color: #0e2240;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      /* padding-top: 10px;
+      padding-bottom: 20px; */
+      transform: translateX(100%);
+      transition: transform 0.8s ease-in;
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .burger {
+      display: block;
+    }
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
+
+  /* BODY */
+
+  
+
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-size: max(4vw);
+    color: #0e2240;
+    background-color: #ffffff;
+    background-image: url("../pictures/white-brick-wall.png");
+    text-align: center;
+  }
+  #bio {
+    width: 65%;
+  }
+  #social-media a:link {
+    color: #8b2131;
+    background-color: transparent; 
+    text-decoration: none;
+  }
+
+  #social-media a:visited {
+    color: #8b2131;
+    background-color: transparent; 
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    #welcome-section {
+      font-size: 25px;
+    }
+  }
+
+  .headshot {
+    max-width: 20%;
+    max-height: 20%;
+    object-fit: cover;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #8b2131;
+    margin-bottom: 15px;
+  }
+  
+  .construction {
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: cover;
+  }
+
+  #hi {
+    padding: 15px 15px 5px 15px;
+  }
+
+  #bio {
+    padding: 5px 35px 5px 35px;
+  }
+  
+  #social-media {
+    padding: 25px;
+    font-size: 50px;
+  }
+
+  .background-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .page-img-background{
+      height: 15vh;
+      width: auto;
+      background-size:contain;
+      background-position: center top;
+      background-repeat:repeat-x;
+      opacity: 0.5;
+      filter: grayscale(50%);
+  }
+
+   #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("../pictures/white-brick-wall.png");
+    width: 100%;
+    height: 100vh;
+  }
+
+  .construction {
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: cover;
+  }
+  
+  
+  #inquiries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-image: url("../pictures/white-brick-wall.png");
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* #tweets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    background-image: url("../pictures/white-brick-wall.png");
+    width: 100%;
+    height: 100vh;
+  } */
+
+  #bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0e2240;
+  }
+
+  #bottom a:link {
+    color: #fec524;
+    background-color: transparent; 
+    text-decoration: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+  }
+ 
