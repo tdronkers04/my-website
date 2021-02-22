@@ -126,9 +126,7 @@
     transform: rotate(45deg) translate(-5px,-6px);
   }
 
-  /* BODY */
-
-  
+  /* ABOUT */
 
   #welcome-section {
     display: flex;
@@ -174,12 +172,6 @@
     margin-bottom: 15px;
   }
   
-  .construction {
-    max-width: 40%;
-    max-height: 40%;
-    object-fit: cover;
-  }
-
   #hi {
     padding: 15px 15px 5px 15px;
   }
@@ -193,33 +185,59 @@
     font-size: 50px;
   }
 
+  /* SKYLINE WALLPAPER */
+
   .background-wrapper{
     display: grid;
     grid-template-columns: 1fr;
   }
   
   .page-img-background{
-      height: 15vh;
-      width: auto;
-      background-size:contain;
-      background-position: center top;
-      background-repeat:repeat-x;
-      opacity: 0.5;
-      filter: grayscale(50%);
+    height: 15vh;
+    width: auto;
+    background-size:contain;
+    background-position: center top;
+    background-repeat:repeat-x;
+    opacity: 0.5;
+    filter: grayscale(50%);
   }
+
+  /* PROTFOLIO */
 
    .projects {
     background-color: #ffffff;
     background-image: url("../pictures/white-brick-wall.png");
-    /* width: 100%; */
     height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 20px;
     padding: 2rem;
+  }
+
+  .project {
+    background: #0E2240;
+    padding: 1rem;
+    border-radius: 2%;
+    box-shadow: 3px 4px 5px #8b2131;
+  }
+
+  .project img {
+    width: 100%;
+    border-radius: 2%;
+  }
+
+  .project h2 {
+    color: #fec524;
+  }
+
+  .project button {
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5%;
   }
 
   .construction {
@@ -228,6 +246,7 @@
     object-fit: cover;
   }
   
+  /* CONTACT */
   
   #inquiries {
     display: flex;
@@ -235,20 +254,11 @@
     align-items: center;
     background-color: #ffffff;
     background-image: url("../pictures/white-brick-wall.png");
-    /* width: 100%; */
     height: 100vh;
   }
 
-  /* #tweets {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-    background-image: url("../pictures/white-brick-wall.png");
-    width: 100%;
-    height: 100vh;
-  } */
+  
+  /* BOTTOM */
 
   #bottom {
     display: flex;
@@ -270,6 +280,8 @@
     background-color: transparent; 
     text-decoration: none;
   }
+
+  /* FOOTER */
 
   footer {
     display: flex;
