@@ -204,12 +204,20 @@
 
   /* PROTFOLIO */
 
+  main {
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: url("../pictures/white-brick-wall.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
    .projects {
     background-color: #ffffff;
     background-image: url("../pictures/white-brick-wall.png");
-    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     padding: 2rem;
   }
@@ -217,8 +225,8 @@
   .project {
     background: #0E2240;
     padding: 1rem;
-    border-radius: 2%;
-    box-shadow: 3px 4px 5px #8b2131;
+    border-radius: 5%;
+    box-shadow: 3px 4px 5px #0a0a0a;
   }
 
   .project img {
@@ -231,9 +239,11 @@
   }
 
   .project button {
-    background-color: #ffffff;
+    background-color: #8b2131;
+    color: #ffffff;
     border: none;
     text-align: center;
+    margin-top: 5px;
     padding: 5px 10px;
     display: inline-block;
     font-size: 12px;
