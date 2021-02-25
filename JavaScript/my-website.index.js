@@ -11,12 +11,25 @@ const navSlide = () => {
             if (link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 4 + 0.5}s`;
             } 
         }); 
         burger.classList.toggle('toggle');
-
     });
 }
 
 navSlide();
+
+// HIDE NAV SLIDER AFTER LINK CLICK
+
+// const navHide = () => {
+//     const nav = document.querySelector('.nav-links');
+//     const navLinksA = document.querySelectorAll('.nav-links a');
+//     console.log(navLinksA);
+
+//     navLinksA.addEventListener('click', () => {
+//         nav.classList.toggle('nav-active');
+//     });
+// }
+
+// navHide();

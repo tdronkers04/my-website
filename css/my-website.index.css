@@ -1,6 +1,7 @@
 * {
     font-family: "Rajdhani";
     margin: 0%;
+    line-height: 1.3;
   }
   
   /* NAVIGATION */
@@ -105,6 +106,11 @@
     transform: translateX(0%);
   }
 
+  .nav-hide {
+    transform: translateX(100%);
+    color: red;
+  }
+
   @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -193,13 +199,19 @@
   }
   
   .page-img-background{
-    height: 15vh;
+    height: 12vh;
     width: auto;
     background-size:contain;
-    background-position: center top;
+    background-position: center;
     background-repeat:repeat-x;
     opacity: 0.5;
     filter: grayscale(50%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .page-img-background {
+      height: 10vh;
+    }
   }
 
   /* PROTFOLIO */
@@ -209,8 +221,15 @@
     background-color: #ffffff;
     background-image: url("../pictures/white-brick-wall.png");
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #0E2240;
+    font-size: large;
+  }
+
+  main h1 {
+    padding: 1em;;
   }
 
    .projects {
@@ -259,12 +278,85 @@
   /* CONTACT */
   
   #inquiries {
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: #ffffff;
     background-image: url("../pictures/white-brick-wall.png");
     height: 100vh;
+    color: #0E2240;
+    font-size: large;
+  }
+
+  #inquiries h1 {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .contact-wrapper {
+    box-sizing: border-box; /*Begin BT tutorial*/
+    padding: 1em;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding:0;
+  }
+
+  #brand {
+    color: #8b2131;
+  }
+
+  .contact-wrapper {
+    box-shadow: 0 0 20px 0 #0E2240;
+  }
+
+  .contact-wrapper >* {
+    padding: 1em;
+  }
+
+  .company-info {
+    background: #ffffff;
+  }
+
+  .company-info h3, .company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  .contact {
+    background: #ffffff;
+  }
+
+  /* FORM STYLES */
+
+  .contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .contact form label {
+    display: block;
+  }
+
+  .contact form p {
+    margin: 0;
+  }
+
+  .contact form .full {
+    grid-column: 1 / 3;
+  }
+
+  .contact form button, .contact form input, .contact form textarea {
+    width: 100%;
+    
   }
 
   
