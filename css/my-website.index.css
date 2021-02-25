@@ -278,10 +278,10 @@
   /* CONTACT */
   
   #inquiries {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     background-color: #ffffff;
     background-image: url("../pictures/white-brick-wall.png");
     height: 100vh;
@@ -297,7 +297,7 @@
   .contact-wrapper {
     box-sizing: border-box; /*Begin BT tutorial*/
     padding: 1em;
-    max-width: 1170px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -309,9 +309,9 @@
     padding:0;
   }
 
-  #brand {
+  /* #brand {
     color: #8b2131;
-  }
+  } */
 
   .contact-wrapper {
     box-shadow: 0 0 20px 0 #0E2240;
@@ -322,7 +322,8 @@
   }
 
   .company-info {
-    background: #ffffff;
+    background: #0E2240;
+    color: #ffffff;
   }
 
   .company-info h3, .company-info ul {
@@ -356,7 +357,32 @@
 
   .contact form button, .contact form input, .contact form textarea {
     width: 100%;
-    
+    border: 1px solid #8b2131;  
+  }
+
+  .contact form button {
+    background: #8b2131;
+    color: #ffffff;
+    border: 0;
+    text-transform: uppercase;
+  }
+
+  .contact form button:hover, .contact form button:focus {
+    background: #fec524;
+    outline: 0;
+    /* transition: background-color 0.5s ease-out; */
+  }
+
+  @media screen and (min-width: 768px) {
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .contact-wrapper > * {
+      padding: 2em;
+    }
+
   }
 
   
