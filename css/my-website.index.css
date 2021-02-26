@@ -106,10 +106,6 @@
     transform: translateX(0%);
   }
 
-  .nav-hide {
-    transform: translateX(100%);
-    color: red;
-  }
 
   @keyframes navLinkFade {
     from {
@@ -302,16 +298,14 @@
     margin-right: auto;
     padding: 1em;
     text-align: center;
+    border-radius: 3%;
+    background-color: #ffffff;
   }
 
   ul {
     list-style: none;
     padding:0;
   }
-
-  /* #brand {
-    color: #8b2131;
-  } */
 
   .contact-wrapper {
     box-shadow: 0 0 20px 0 #0E2240;
@@ -324,11 +318,17 @@
   .company-info {
     background: #0E2240;
     color: #ffffff;
+    border-radius: 3%;
   }
 
-  .company-info h3, .company-info ul {
+  .company-info ul li {
     text-align: center;
     margin: 0 0 1rem 0;
+    margin: 12px;
+  }
+
+  .company-info ul li i{
+    color: #fec524;
   }
 
   .contact {
@@ -363,7 +363,9 @@
   .contact form button {
     background: #8b2131;
     color: #ffffff;
-    border: 0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3%;
     text-transform: uppercase;
   }
 
