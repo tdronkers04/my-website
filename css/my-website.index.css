@@ -265,6 +265,11 @@
     border-radius: 5%;
   }
 
+  .project button:hover, .project button:focus {
+    background: #fec524;
+    outline: 0;
+  }
+
   .construction {
     max-width: 40%;
     max-height: 40%;
@@ -372,7 +377,6 @@
   .contact form button:hover, .contact form button:focus {
     background: #fec524;
     outline: 0;
-    /* transition: background-color 0.5s ease-out; */
   }
 
   @media screen and (min-width: 768px) {
